@@ -2,7 +2,7 @@
 First project using micropython on Pycom LoPy4 to transmit sensor-data via LoRa
 
 ## Overview
-That project consists of two components, the sender and a receiver. Both are running on LoPy4 and communicate via Raw-LoRa. Both components can be found in my Git-repositories. I use VSCode, but feel free to use an IDE of your choice.
+That project consists of two components, the sender and a [receiver](https://github.com/worstcasebc/LoRaSensorReceiver). Both are running on LoPy4 and communicate via Raw-LoRa. Both components can be found in my Git-repositories. I use VSCode, but feel free to use an IDE of your choice.
 
 ## Sender
 That component sends the temperature and humidity data via Raw-LoRa and adds the own device-ID (last 4 chars) for possibly identification reasons.
