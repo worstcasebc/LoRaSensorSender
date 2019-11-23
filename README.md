@@ -6,6 +6,7 @@ That project consists of two components, the sender and a [receiver](https://git
 
 ## Sender
 That component sends the temperature and humidity data via Raw-LoRa and adds the own device-ID (last 4 chars) for possibly identification reasons.
+<img src="https://user-images.githubusercontent.com/58089458/69477069-0d972280-0de2-11ea-8d02-de4a6a5f4bb0.jpg" width="600" height="400" />
 
 ### Hardware used
 * [Pycom LoPy4](https://pycom.io/product/lopy4/) (LoRa-antenna is necessary to not destroy your board)
@@ -14,7 +15,7 @@ That component sends the temperature and humidity data via Raw-LoRa and adds the
 * [DHT22 Temperature and Humidity sensor6](https://www.exp-tech.de/sensoren/temperatur/7784/dht22-am2302-feuchtigkeits-und-temperatursensor)
 * a few jumper cables and a breadboard
 
-### Wiring Sender
+### Wiring receiver
 |LoPy4          |Sensor         |Description                            |
 | ------------- | ------------- | ------------------------------------- |
 | 3.3V          | VCC           | works with 3.3V                       |
