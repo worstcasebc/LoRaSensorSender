@@ -25,7 +25,12 @@ That component sends the temperature and humidity data via Raw-LoRa and adds the
 
 
 ### Used libraries
-to be described
+I googled for an existing DHT-library for micropython and [found that one](https://github.com/JurassicPork/DHT_PyCom), that I could use without a change. 
 
 ### Code
-to be described
+The code is simple enough: Read LoRa-Mac for identification (last 4 chars will be send with the transmission), create a LoRa-socket, pack the data in a struct and send it. Then fall into sleep for 60 seconds.
+The data are packed as followed:
+```python
+datatosend = struct.pack('<4shh', devID, dataTemp,  dataHum)
+```
+DevID is sent as string with length 4. Temperature and humidity were read from the sensor as float-values but were multiplied by 100 and converted to int for payload reasons.
